@@ -15,6 +15,7 @@ public class Geometry {
 
         Triangle triangle = new Triangle(1.0, 3.0, 3.2);
         Triangle.printTrianglePerimetr(triangle);
+        
 
 
 
