@@ -37,4 +37,24 @@ public class TriangleTests {
         }
     }
 
+    @Test
+    void testEqauality() {
+        var t1 = new Triangle(4.0, 5.0, 3);
+        var t2 = new Triangle(5.0, 4.0, 3);
+        Assertions.assertEquals(t1, t2);
+    }
+
+    @Test
+    void testEqauality2() {
+        var t1 = new Triangle(4.0, 5.0, 3);
+        var t2 = new Triangle(3.0, 5.0, 4);
+        Assertions.assertEquals(t1, t2);
+    }
+
+    @Test
+    void testEqauality3() {
+        var t1 = new Triangle(4.0, 5.0, 3);
+        var t2 = new Triangle(3.0, 4.0, 5);
+        Assertions.assertEquals(t1, t2);
+    }
 }
