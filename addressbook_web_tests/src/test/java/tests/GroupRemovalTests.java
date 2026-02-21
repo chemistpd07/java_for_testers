@@ -11,7 +11,7 @@ import java.util.Random;
 public class GroupRemovalTests extends TestBase {
 
   @Test
-  public void CanRemoveGroup() {
+  public void canRemoveGroup() {
     if (app.groups().getCount()==0) {
       app.groups().createGroup(new GroupData("", "group name", "group header", "group footer"));
     }
