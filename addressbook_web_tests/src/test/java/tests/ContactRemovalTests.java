@@ -12,7 +12,7 @@ public class ContactRemovalTests extends TestBase {
 
     @Test
     public void canRemoveContact() {
-        if (!app.contacts().isContactPresent()) {
+        if (!(app.contacts().isContactPresent())) {
             app.contacts().createContact(
                     new ContactData(
                             "", "Kovrov",
@@ -28,7 +28,6 @@ public class ContactRemovalTests extends TestBase {
         var rnd =new Random();
         var index =rnd.nextInt(oldContacts.size());
         app.contacts.removeContact(oldContacts.get(index));
-//        app.
         var newContacts =app.contacts.getList();
         var expectedList = new ArrayList<>(oldContacts);
         expectedList.remove(index);
